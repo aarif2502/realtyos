@@ -1,0 +1,6 @@
+[
+  {"id":"MT-3011","propertyId":"prop-riverwalk","unit":"U-115","issue":"HVAC cooling failure","priority":"High","assignee":"Blue Ridge Services","status":"In Progress"},
+  {"id":"MT-3012","propertyId":"prop-palm-grove","unit":"T-0502","issue":"Leaking washer valve","priority":"Medium","assignee":"Cityline Plumbing","status":"Open"},
+  {"id":"MT-3013","propertyId":"prop-skyline","unit":"S-28","issue":"Lobby access reader replacement","priority":"Low","assignee":"SecureTech","status":"Awaiting Parts"},
+  {"id":"MT-3014","propertyId":"prop-riverwalk","unit":"U-307","issue":"Drywall patch and repaint","priority":"Low","assignee":"Prime Paint","status":"Completed"}
+]

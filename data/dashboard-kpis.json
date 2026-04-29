@@ -1,0 +1,6 @@
+[
+  {"label":"Occupancy","value":"92.3%","tone":"active","helper":"+0.8% vs last month"},
+  {"label":"Revenue","value":"$1.37M","tone":"active","helper":"Collected this month"},
+  {"label":"Pending Rent","value":"$84.2K","tone":"pending","helper":"Needs follow-up"},
+  {"label":"Open Tickets","value":"26","tone":"overdue","helper":"7 breaching SLA"}
+]

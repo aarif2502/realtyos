@@ -1,0 +1,7 @@
+[
+  {"id":"ten-001","name":"Maya Thompson","propertyId":"prop-riverwalk","unit":"U-101","leaseEnd":"2026-11-30","balance":0,"status":"Current"},
+  {"id":"ten-002","name":"Liam Carter","propertyId":"prop-palm-grove","unit":"T-0712","leaseEnd":"2026-05-31","balance":1250,"status":"Delinquent"},
+  {"id":"ten-003","name":"Aiden Brooks","propertyId":"prop-skyline","unit":"S-31","leaseEnd":"2027-02-28","balance":0,"status":"Current"},
+  {"id":"ten-004","name":"Olivia Reed","propertyId":"prop-palm-grove","unit":"T-1504","leaseEnd":"2026-09-30","balance":0,"status":"Current"},
+  {"id":"ten-005","name":"Ethan Bell","propertyId":"prop-riverwalk","unit":"U-208","leaseEnd":"2026-06-30","balance":320,"status":"Notice"}
+]

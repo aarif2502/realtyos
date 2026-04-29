@@ -1,0 +1,8 @@
+[
+  {"role":"Admin","canAccess":"All modules, user management, integrations"},
+  {"role":"Agent","canAccess":"Leads, deals, contracts, listings, maintenance"},
+  {"role":"Accountant","canAccess":"Payments, reports, contracts (read only)"},
+  {"role":"Owner","canAccess":"Owner portal, portfolio, contracts/payments (read only)"},
+  {"role":"Tenant","canAccess":"Tenant portal, payments, maintenance requests, contract view"}
+]
+

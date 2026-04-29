@@ -1,0 +1,6 @@
+[
+  {"id":"rn-1","contract":"CTR-1201","tenant":"Nadia Khan","property":"Palm Residence Block A","currentRent":9500,"suggestedRent":9900,"expiry":"2026-05-15","status":"Alert"},
+  {"id":"rn-2","contract":"CTR-1324","tenant":"John Carter","property":"Marina Heights Tower","currentRent":10200,"suggestedRent":10500,"expiry":"2026-06-01","status":"Ready"},
+  {"id":"rn-3","contract":"CTR-1455","tenant":"Maya Noor","property":"JLT View Apartments","currentRent":8800,"suggestedRent":9000,"expiry":"2026-06-12","status":"In Review"}
+]
+

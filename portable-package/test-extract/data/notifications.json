@@ -1,0 +1,6 @@
+[
+  {"id":"n1","title":"3 leases expiring in 30 days","time":"2m ago","tone":"pending","channel":"WhatsApp"},
+  {"id":"n2","title":"Ticket MT-4102 breached SLA","time":"9m ago","tone":"overdue","channel":"WhatsApp"},
+  {"id":"n3","title":"Viewing confirmed for lead-001","time":"18m ago","tone":"active","channel":"WhatsApp"},
+  {"id":"n4","title":"Rent reminder sent to 14 tenants","time":"31m ago","tone":"active","channel":"WhatsApp"}
+]

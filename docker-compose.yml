@@ -1,0 +1,39 @@
+services:
+  app:
+    build: .
+    container_name: ${REALTYOS_APP_CONTAINER:-supported-housing-platform-app}
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    volumes:
+      - ${DOCUMENT_STORAGE_HOST_PATH:-./storage}:${DOCUMENT_STORAGE_ROOT:-/mnt/storage}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: ${REALTYOS_PG_CONTAINER:-supported-housing-platform-postgres}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${REALTYOS_PG_DATABASE:-platform}
+      POSTGRES_USER: ${REALTYOS_PG_USER:-platform}
+      POSTGRES_PASSWORD: ${REALTYOS_PG_PASSWORD:-change_me}
+    ports:
+      - "${REALTYOS_PG_PORT:-5432}:5432"
+    volumes:
+      - platform-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${REALTYOS_PG_USER:-platform} -d ${REALTYOS_PG_DATABASE:-platform}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  platform-postgres-data:

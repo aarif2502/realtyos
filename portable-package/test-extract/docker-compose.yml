@@ -1,0 +1,29 @@
+services:
+  app:
+    build: .
+    container_name: realtyos-app
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./storage:/mnt/storage
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: realtyos-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: realtyos
+      POSTGRES_USER: realtyos
+      POSTGRES_PASSWORD: realtyos_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - realtyos-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  realtyos-postgres-data:

@@ -1,0 +1,6 @@
+[
+  {"id":"ow-1","name":"Marina Heights Tower","units":42,"occupied":38,"monthlyIncome":245000,"roi":"9.8%","city":"Dubai Marina"},
+  {"id":"ow-2","name":"Palm Residence Block A","units":28,"occupied":24,"monthlyIncome":167000,"roi":"8.9%","city":"Palm Jumeirah"},
+  {"id":"ow-3","name":"JLT View Apartments","units":35,"occupied":31,"monthlyIncome":198000,"roi":"10.2%","city":"JLT"}
+]
+

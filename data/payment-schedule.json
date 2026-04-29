@@ -1,0 +1,6 @@
+[
+  {"id":"PAY-301","tenant":"Maya Thompson","property":"Riverwalk Residences","dueDate":"2026-04-05","amount":2250,"status":"Paid"},
+  {"id":"PAY-302","tenant":"Liam Carter","property":"Palm Grove Towers","dueDate":"2026-04-05","amount":2600,"status":"Overdue"},
+  {"id":"PAY-303","tenant":"Olivia Reed","property":"Palm Grove Towers","dueDate":"2026-04-05","amount":3900,"status":"Pending"},
+  {"id":"PAY-304","tenant":"Aiden Brooks","property":"Skyline Commerce Center","dueDate":"2026-04-05","amount":6400,"status":"Paid"}
+]

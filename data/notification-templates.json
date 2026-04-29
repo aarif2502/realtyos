@@ -1,0 +1,7 @@
+[
+  {"id":"ntf-001","event":"Rent Reminder","channel":"WhatsApp","audience":"Tenant","template":"Hi {{tenant}}, your rent of {{amount}} is due on {{dueDate}}.","status":"Live"},
+  {"id":"ntf-002","event":"Contract Expiry Alert","channel":"WhatsApp","audience":"Agent + Tenant","template":"Lease {{contractId}} expires on {{expiryDate}}. Tap to renew.","status":"Live"},
+  {"id":"ntf-003","event":"Maintenance Update","channel":"WhatsApp","audience":"Tenant","template":"Ticket {{ticketId}} is now {{status}}.","status":"Draft"},
+  {"id":"ntf-004","event":"Viewing Confirmation","channel":"WhatsApp","audience":"Lead","template":"Viewing confirmed for {{property}} at {{time}}.","status":"Live"}
+]
+

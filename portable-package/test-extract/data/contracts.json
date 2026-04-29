@@ -1,0 +1,5 @@
+[
+  {"id":"CTR-9001","tenant":"Maya Thompson","property":"Riverwalk Residences","plan":"Monthly","expiry":"2026-11-30","status":"Active"},
+  {"id":"CTR-9002","tenant":"Liam Carter","property":"Palm Grove Towers","plan":"Monthly","expiry":"2026-05-31","status":"Expiring"},
+  {"id":"CTR-9003","tenant":"Sophia Nguyen","property":"Riverwalk Residences","plan":"Monthly","expiry":"2027-04-30","status":"Draft"}
+]

@@ -1,0 +1,211 @@
+{
+  "residents": [
+    {
+      "id": "res-001",
+      "name": "Amara Okafor",
+      "age": 28,
+      "property": "Willow House",
+      "room": "WH-04",
+      "referralSource": "Local Authority",
+      "moveIn": "2026-01-12",
+      "riskLevel": "Medium",
+      "status": "Active",
+      "supportWorker": "Nadia Price",
+      "weeklyRent": 245,
+      "arrears": 120,
+      "nextReview": "2026-05-03",
+      "supportGoals": ["Budgeting", "Tenancy sustainment", "GP registration"]
+    },
+    {
+      "id": "res-002",
+      "name": "Daniel Mensah",
+      "age": 41,
+      "property": "Riverbank Lodge",
+      "room": "RL-11",
+      "referralSource": "Probation",
+      "moveIn": "2025-11-20",
+      "riskLevel": "High",
+      "status": "Active",
+      "supportWorker": "Ruth Ali",
+      "weeklyRent": 268,
+      "arrears": 860,
+      "nextReview": "2026-04-28",
+      "supportGoals": ["Substance misuse support", "Employment pathway", "Licence compliance"]
+    },
+    {
+      "id": "res-003",
+      "name": "Leah Stone",
+      "age": 19,
+      "property": "Cedar Court",
+      "room": "CC-02",
+      "referralSource": "Youth Homeless Team",
+      "moveIn": "2026-03-04",
+      "riskLevel": "Low",
+      "status": "Move-on Ready",
+      "supportWorker": "Nadia Price",
+      "weeklyRent": 230,
+      "arrears": 0,
+      "nextReview": "2026-05-15",
+      "supportGoals": ["College attendance", "Move-on plan", "Independent living skills"]
+    }
+  ],
+  "referrals": [
+    {
+      "id": "ref-101",
+      "applicant": "Samir Khan",
+      "source": "Adult Social Care",
+      "priority": "High",
+      "status": "Assessment",
+      "received": "2026-04-19",
+      "needs": ["Mental health support", "Accessible ground-floor room"],
+      "assignedTo": "Ruth Ali"
+    },
+    {
+      "id": "ref-102",
+      "applicant": "Eve Carter",
+      "source": "Domestic Abuse Service",
+      "priority": "Urgent",
+      "status": "Awaiting Documents",
+      "received": "2026-04-22",
+      "needs": ["Safe placement", "Benefits restart", "Trauma-informed support"],
+      "assignedTo": "Nadia Price"
+    }
+  ],
+  "properties": [
+    {
+      "id": "shp-001",
+      "name": "Willow House",
+      "localAuthority": "Birmingham City Council",
+      "units": 12,
+      "occupied": 11,
+      "voids": 1,
+      "weeklyCharge": 245,
+      "complianceScore": 92,
+      "housingOfficer": "Tariq Evans"
+    },
+    {
+      "id": "shp-002",
+      "name": "Riverbank Lodge",
+      "localAuthority": "Manchester City Council",
+      "units": 18,
+      "occupied": 16,
+      "voids": 2,
+      "weeklyCharge": 268,
+      "complianceScore": 84,
+      "housingOfficer": "Maya Green"
+    },
+    {
+      "id": "shp-003",
+      "name": "Cedar Court",
+      "localAuthority": "Leeds City Council",
+      "units": 9,
+      "occupied": 9,
+      "voids": 0,
+      "weeklyCharge": 230,
+      "complianceScore": 97,
+      "housingOfficer": "Tariq Evans"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-501",
+      "resident": "Daniel Mensah",
+      "property": "Riverbank Lodge",
+      "category": "Safeguarding",
+      "severity": "High",
+      "status": "Open",
+      "reportedAt": "2026-04-21T09:30:00.000Z",
+      "owner": "Ruth Ali",
+      "summary": "Resident disclosed risk of exploitation; safeguarding referral submitted."
+    },
+    {
+      "id": "inc-502",
+      "resident": "Amara Okafor",
+      "property": "Willow House",
+      "category": "Anti-social behaviour",
+      "severity": "Medium",
+      "status": "Action Plan",
+      "reportedAt": "2026-04-18T18:15:00.000Z",
+      "owner": "Nadia Price",
+      "summary": "Noise complaint from neighbouring unit; restorative meeting booked."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-701",
+      "title": "Complete Daniel's risk review",
+      "owner": "Ruth Ali",
+      "due": "2026-04-26",
+      "area": "Support",
+      "status": "Due Soon"
+    },
+    {
+      "id": "tsk-702",
+      "title": "Upload Willow House fire alarm certificate",
+      "owner": "Tariq Evans",
+      "due": "2026-04-29",
+      "area": "Compliance",
+      "status": "Pending"
+    },
+    {
+      "id": "tsk-703",
+      "title": "Submit HB evidence pack for Amara",
+      "owner": "Finance Team",
+      "due": "2026-04-25",
+      "area": "Finance",
+      "status": "Due Soon"
+    }
+  ],
+  "claims": [
+    {
+      "id": "hb-301",
+      "resident": "Amara Okafor",
+      "property": "Willow House",
+      "period": "Apr 2026",
+      "amount": 980,
+      "status": "Evidence Required",
+      "submitted": false
+    },
+    {
+      "id": "hb-302",
+      "resident": "Daniel Mensah",
+      "property": "Riverbank Lodge",
+      "period": "Apr 2026",
+      "amount": 1072,
+      "status": "Submitted",
+      "submitted": true
+    },
+    {
+      "id": "hb-303",
+      "resident": "Leah Stone",
+      "property": "Cedar Court",
+      "period": "Apr 2026",
+      "amount": 920,
+      "status": "Paid",
+      "submitted": true
+    }
+  ],
+  "compliance": [
+    {
+      "id": "cmp-401",
+      "property": "Willow House",
+      "item": "Gas Safety",
+      "expiry": "2026-08-11",
+      "status": "Valid"
+    },
+    {
+      "id": "cmp-402",
+      "property": "Riverbank Lodge",
+      "item": "Fire Risk Assessment",
+      "expiry": "2026-05-09",
+      "status": "Expiring"
+    },
+    {
+      "id": "cmp-403",
+      "property": "Cedar Court",
+      "item": "EICR",
+      "expiry": "2028-03-01",
+      "status": "Valid"
+    }
+  ]
+}

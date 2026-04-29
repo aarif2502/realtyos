@@ -1,0 +1,21 @@
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# dependencies/build/runtime
+node_modules/
+.next/
+.openclaw/
+.pm2/
+*.log
+
+# large/runtime recovery artifacts
+realtyos-runtime.tar
+*.tar
+*.tgz
+*.zip
+
+# temp office files
+~$*

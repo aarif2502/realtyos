@@ -1,0 +1,6 @@
+[
+  {"id":"tpl-1","name":"Residential Lease - Annual","fields":["tenant_name","property_name","unit","annual_rent","deposit","start_date","end_date"],"lastUpdated":"2026-04-14"},
+  {"id":"tpl-2","name":"Commercial Lease","fields":["tenant_name","property_name","annual_rent","payment_frequency","notice_period"],"lastUpdated":"2026-04-10"},
+  {"id":"tpl-3","name":"Renewal Addendum","fields":["contract_id","new_rent","renewal_start","renewal_end"],"lastUpdated":"2026-04-18"}
+]
+

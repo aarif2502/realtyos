@@ -1,0 +1,6 @@
+[
+  {"id":"tr-1","title":"AC not cooling in living room","status":"Open","priority":"High","sla":"03:10:42","photoCount":2,"updated":"10m ago"},
+  {"id":"tr-2","title":"Leaking sink in kitchen","status":"Assigned","priority":"Medium","sla":"08:22:19","photoCount":1,"updated":"1h ago"},
+  {"id":"tr-3","title":"Balcony light replacement","status":"Done","priority":"Low","sla":"00:00:00","photoCount":0,"updated":"Yesterday"}
+]
+

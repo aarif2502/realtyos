@@ -1,0 +1,42 @@
+[
+  {
+    "id":"lead-001",
+    "name":"Amira Hassan",
+    "property":"Riverwalk Residences",
+    "budget":"$2,800",
+    "stage":"Viewing",
+    "timeline":["Lead created from website","Called and qualified","Viewing confirmed for Apr 22"],
+    "notes":"Prefers higher floor, parking required.",
+    "whatsapp":"+971-55-884-2201"
+  },
+  {
+    "id":"lead-002",
+    "name":"Yousef Rahman",
+    "property":"Palm Grove Towers",
+    "budget":"$3,400",
+    "stage":"Offer",
+    "timeline":["Portal lead","Tour completed","Offer submitted"],
+    "notes":"Needs move-in by May 10.",
+    "whatsapp":"+971-55-211-0900"
+  },
+  {
+    "id":"lead-003",
+    "name":"Blue Cedar LLC",
+    "property":"Skyline Commerce Center",
+    "budget":"$6,500",
+    "stage":"Contacted",
+    "timeline":["Broker referral","Intro call done"],
+    "notes":"Evaluating two office options.",
+    "whatsapp":"+971-55-623-9881"
+  },
+  {
+    "id":"lead-004",
+    "name":"Rina Patel",
+    "property":"Riverwalk Residences",
+    "budget":"$2,600",
+    "stage":"New",
+    "timeline":["Imported from campaign"],
+    "notes":"Student profile with guarantor.",
+    "whatsapp":"+971-50-007-2218"
+  }
+]

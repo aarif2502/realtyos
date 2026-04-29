@@ -1,0 +1,6 @@
+[
+  {"id":"or-1","name":"Monthly Income Statement - March 2026","period":"Mar 2026","type":"Income","format":"PDF"},
+  {"id":"or-2","name":"Occupancy Performance - Q1 2026","period":"Q1 2026","type":"Occupancy","format":"PDF"},
+  {"id":"or-3","name":"ROI Snapshot - Portfolio","period":"Apr 2026","type":"ROI","format":"XLSX"}
+]
+
