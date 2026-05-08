@@ -1,0 +1,14 @@
+<svg width="420" height="90" viewBox="0 0 420 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="90" height="90" rx="22" fill="#090909"/>
+<path d="M45 14L69 28V52C69 66 59.4 78.7 45 82C30.6 78.7 21 66 21 52V28L45 14Z" fill="url(#gold)"/>
+<path d="M34 46L42 54L57 38" stroke="#090909" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112" y="42" fill="#090909" font-family="Arial, sans-serif" font-size="28" font-weight="700">Goldenhub</text>
+<text x="112" y="68" fill="#9F7928" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">INVESTMENTS LTD</text>
+<defs>
+<linearGradient id="gold" x1="21" y1="14" x2="69" y2="82" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7DF8A"/>
+<stop offset="0.5" stop-color="#D4AF37"/>
+<stop offset="1" stop-color="#9F7928"/>
+</linearGradient>
+</defs>
+</svg>
