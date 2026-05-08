@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useMemo, useRef, useState, type ComponentType } from "react";
+import { useEffect, useMemo, useState, type ComponentType } from "react";
 import {
   BarChart3,
   ChevronDown,
@@ -32,42 +32,42 @@ type GroupItem = {
 type NavItem = LinkItem | GroupItem;
 
 const navItems: NavItem[] = [
-  { type: "link", href: "/app", label: "Overview", icon: LayoutGrid },
+  { type: "link", href: "/app", label: "Command Centre", icon: LayoutGrid },
   {
     type: "group",
     id: "daily",
-    label: "PMS",
-    description: "Properties, tenants and documents",
+    label: "Accommodation",
+    description: "Homes, residents and documents",
     icon: HeartHandshake,
     children: [
-      { href: "/app/tenants", label: "Tenants" },
+      { href: "/app/tenants", label: "Residents" },
       { href: "/app/maintenance", label: "Maintenance" },
-      { href: "/app/documents", label: "Documents" },
-      { href: "/app/properties", label: "Properties" },
+      { href: "/app/documents", label: "Document Vault" },
+      { href: "/app/properties", label: "Properties & Rooms" },
     ],
   },
   {
     type: "link",
     href: "/app/crm",
-    label: "CRM Workspace",
+    label: "Referral CRM",
     icon: Users,
   },
   {
     type: "group",
     id: "compliance",
-    label: "Compliance",
-    description: "Support evidence and audit",
+    label: "Support & Risk",
+    description: "Evidence, plans and audit trail",
     icon: ShieldCheck,
     children: [
-      { href: "/app/compliance", label: "Support Plans & Risk" },
-      { href: "/app/support-notes", label: "Case Notes" },
+      { href: "/app/compliance", label: "Plans & Risk" },
+      { href: "/app/support-notes", label: "Support Notes" },
     ],
   },
   {
     type: "group",
     id: "finance",
-    label: "Finance & Contracts",
-    description: "Rent, HB/UC and payments",
+    label: "Finance",
+    description: "Rent, HB/UC and contracts",
     icon: CreditCard,
     roles: ["admin", "agent", "accountant"],
     children: [
@@ -81,21 +81,21 @@ const navItems: NavItem[] = [
     type: "group",
     id: "reports",
     label: "Reports",
-    description: "BI, reports and management view",
+    description: "BI, storyboards and board packs",
     icon: BarChart3,
     children: [
-      { href: "/app/analytics", label: "BI Reports" },
+      { href: "/app/analytics", label: "Executive BI" },
     ],
   },
   {
     type: "group",
     id: "admin",
     label: "Admin",
-    description: "Setup and configuration",
+    description: "Branding and system setup",
     icon: Wrench,
     roles: ["admin"],
     children: [
-      { href: "/app/settings", label: "Settings" },
+      { href: "/app/settings", label: "Brand Settings" },
       { href: "/app/setup", label: "Setup Panel" },
     ],
   },
@@ -154,24 +154,24 @@ export function Sidebar() {
 
   const brand = settings.platform_sidebar_brand || genericPlatformDefaults.companyName;
   const logoPath = settings.platform_logo_path || genericPlatformDefaults.platformLogoPath;
-  const overviewLabel = settings.platform_sidebar_label_overview || "Overview";
-  const reportsLabel = settings.platform_sidebar_label_reports || "BI Reports";
+  const overviewLabel = settings.platform_sidebar_label_overview || "Command Centre";
+  const reportsLabel = settings.platform_sidebar_label_reports || "Executive BI";
   const primaryColor = settings.platform_primary_color || "";
 
   if (role === "tenant") {
     return (
-      <aside className="glass-panel sticky top-0 hidden h-full max-h-[calc(100dvh-2rem)] w-72 shrink-0 overflow-y-auto border border-white/70 p-4 lg:block">
-        <div className="rounded-2xl bg-ink p-4 text-white">
+      <aside className="goldenhub-sidebar glass-panel sticky top-0 hidden h-full max-h-[calc(100dvh-2rem)] w-72 shrink-0 overflow-y-auto p-4 lg:block">
+        <div className="goldenhub-sidebar-hero rounded-[28px] p-4 text-white">
           <div className="flex items-center gap-3">
             <BrandMark src={logoPath} className="h-12 w-12 rounded-2xl" />
             <div>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-white/80">{brand}</p>
-              <p className="mt-1 text-xs text-white/70">Role: tenant</p>
+              <p className="text-[11px] uppercase tracking-[0.24em] text-gold-100/80">{brand}</p>
+              <p className="mt-1 text-xs text-white/70">Resident access</p>
             </div>
           </div>
         </div>
-        <div className="mt-5 rounded-2xl border border-slate-200 bg-white/70 p-4 text-sm text-slate-600">
-          Tenant portal access is not enabled. Please sign in with a staff account to use the ERP.
+        <div className="mt-5 rounded-2xl border border-amber-200/30 bg-black/60 p-4 text-sm text-white/72">
+          Resident portal access is not enabled. Please sign in with a staff account to use Goldenhub RealtyOS.
           <Link href={appPath("/admin/login")} className="button-primary mt-4 w-full justify-center">
             Staff Sign In
           </Link>
@@ -181,14 +181,17 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="glass-panel sticky top-0 hidden h-full max-h-[calc(100dvh-2rem)] w-72 shrink-0 overflow-y-auto border border-white/70 p-4 lg:block">
-      <div className="rounded-2xl bg-ink p-4 text-white">
+    <aside className="goldenhub-sidebar glass-panel sticky top-0 hidden h-full max-h-[calc(100dvh-2rem)] w-72 shrink-0 overflow-y-auto p-4 lg:block">
+      <div className="goldenhub-sidebar-hero rounded-[28px] p-4 text-white">
         <div className="flex items-center gap-3">
           <BrandMark src={logoPath} className="h-12 w-12 rounded-2xl" />
           <div>
-            <p className="text-[11px] uppercase tracking-[0.2em] text-white/80">{brand}</p>
-            <p className="mt-1 text-xs text-white/70">Role: {role}</p>
+            <p className="text-[11px] uppercase tracking-[0.24em] text-white/74">{brand}</p>
+            <p className="mt-1 text-xs text-white/70">Goldenhub RealtyOS</p>
           </div>
+        </div>
+        <div className="mt-4 rounded-2xl border border-amber-200/20 bg-white/8 px-3 py-2 text-[11px] uppercase tracking-[0.2em] text-white/65">
+          Role: {role}
         </div>
       </div>
 
@@ -202,8 +205,8 @@ export function Sidebar() {
                 href={item.href}
                 style={active && primaryColor ? { backgroundColor: primaryColor } : undefined}
                 className={cn(
-                  "flex items-center gap-3 rounded-2xl border border-slate-200 bg-white/75 px-4 py-4 text-sm font-medium shadow-sm",
-                  active ? "bg-ink text-white" : "text-slate-700 hover:bg-white",
+                  "goldenhub-nav-item flex items-center gap-3 rounded-2xl px-4 py-4 text-sm font-semibold shadow-sm",
+                  active ? "is-active text-white" : "text-slate-700 hover:bg-white",
                 )}
               >
                 <item.icon className="h-4 w-4" />
@@ -216,14 +219,14 @@ export function Sidebar() {
           const groupActive = item.children.some((child) => isActive(pathname, child.href));
 
           return (
-            <div key={item.id} className="rounded-2xl border border-slate-200 bg-white/75 p-2 shadow-sm">
+            <div key={item.id} className="goldenhub-nav-group rounded-2xl p-2 shadow-sm">
               <button
                 type="button"
                 onClick={() => setOpenGroupId((current) => (current === item.id ? null : item.id))}
                 style={groupActive && primaryColor ? { backgroundColor: primaryColor } : undefined}
                 className={cn(
-                  "flex w-full items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium",
-                  groupActive ? "bg-ink text-white" : "text-slate-700 hover:bg-white",
+                  "flex w-full items-center gap-3 rounded-xl px-3 py-2 text-sm font-semibold",
+                  groupActive ? "is-active text-white" : "text-slate-700 hover:bg-white",
                 )}
               >
                 <item.icon className="h-4 w-4" />
@@ -242,11 +245,11 @@ export function Sidebar() {
                         key={child.href}
                         href={child.href}
                         className={cn(
-                          "block rounded-lg px-3 py-2 text-sm",
-                          active ? "bg-slate-100 font-medium text-slate-900" : "text-slate-600 hover:bg-white",
+                          "goldenhub-nav-child block rounded-lg px-3 py-2 text-sm",
+                          active ? "is-active font-semibold text-slate-950" : "text-slate-600 hover:bg-white",
                         )}
                       >
-                          {child.href === "/app/analytics" ? reportsLabel : child.label}
+                        {child.href === "/app/analytics" ? reportsLabel : child.label}
                       </Link>
                     );
                   })}
