@@ -131,6 +131,104 @@ body {
   border-color: rgba(212, 175, 55, 0.24) !important;
 }
 
+.goldenhub-sidebar {
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  background:
+    linear-gradient(180deg, rgba(7, 7, 7, 0.94), rgba(20, 16, 8, 0.9)) !important;
+}
+
+.goldenhub-sidebar-hero {
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(245, 215, 123, 0.18), transparent 12rem),
+    linear-gradient(145deg, #090909, #1a1306) !important;
+}
+
+.goldenhub-nav-item,
+.goldenhub-nav-group {
+  border: 1px solid rgba(212, 175, 55, 0.2) !important;
+  background: rgba(255, 250, 240, 0.92) !important;
+}
+
+.goldenhub-nav-item.is-active,
+.goldenhub-nav-group .is-active {
+  background: linear-gradient(135deg, #111111, #2a1f09) !important;
+  box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.24), 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.goldenhub-nav-child.is-active {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(245, 215, 123, 0.34)) !important;
+  color: #090909 !important;
+}
+
+.goldenhub-login {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(212, 175, 55, 0.28), transparent 28rem),
+    radial-gradient(circle at 88% 0%, rgba(245, 215, 123, 0.14), transparent 24rem),
+    linear-gradient(135deg, #030303 0%, #0c0a05 48%, #1c1405 100%);
+}
+
+.goldenhub-login-card {
+  border-color: rgba(212, 175, 55, 0.28) !important;
+  background: linear-gradient(180deg, rgba(13, 13, 13, 0.88), rgba(20, 16, 8, 0.9)) !important;
+}
+
+.goldenhub-app .ui-input {
+  border-color: rgba(212, 175, 55, 0.24) !important;
+  background: rgba(255, 250, 240, 0.94) !important;
+  color: #111111 !important;
+}
+
+.goldenhub-app main .rounded-\[2rem\].bg-slate-950,
+.goldenhub-app section.bg-slate-950 {
+  border-color: rgba(212, 175, 55, 0.28) !important;
+  background:
+    radial-gradient(circle at 16% 8%, rgba(212, 175, 55, 0.23), transparent 18rem),
+    radial-gradient(circle at 92% 20%, rgba(245, 215, 123, 0.14), transparent 18rem),
+    linear-gradient(135deg, #050505, #171108 70%, #241907) !important;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.28), inset 0 0 0 1px rgba(245, 215, 123, 0.08) !important;
+}
+
+.goldenhub-app main article.rounded-2xl,
+.goldenhub-app main .rounded-2xl.border,
+.goldenhub-app main .rounded-\[2rem\].border {
+  border-color: rgba(212, 175, 55, 0.2) !important;
+}
+
+.goldenhub-app main .bg-white,
+.goldenhub-app main .bg-white\/70,
+.goldenhub-app main .bg-white\/75,
+.goldenhub-app main .bg-white\/80 {
+  background-color: rgba(255, 250, 240, 0.94) !important;
+}
+
+.goldenhub-app main .text-slate-950,
+.goldenhub-app main .text-slate-900 {
+  color: #111111 !important;
+}
+
+.goldenhub-app main .text-amber-200,
+.goldenhub-app main .text-amber-300 {
+  color: #f5d77b !important;
+}
+
+.goldenhub-app .recharts-cartesian-grid line {
+  stroke: rgba(159, 121, 40, 0.18);
+}
+
+.goldenhub-app .recharts-tooltip-wrapper .recharts-default-tooltip {
+  border: 1px solid rgba(212, 175, 55, 0.28) !important;
+  border-radius: 18px !important;
+  background: rgba(9, 9, 9, 0.92) !important;
+  color: #f8f1d6 !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28) !important;
+}
+
+.goldenhub-app .recharts-tooltip-item,
+.goldenhub-app .recharts-tooltip-label {
+  color: #f8f1d6 !important;
+}
+
 @media (max-width: 720px) {
   .ush-site {
     background: linear-gradient(180deg, #050505 0%, #11100c 52%, #fffaf0 52.1%, #fffaf0 100%) !important;
