@@ -1,0 +1,138 @@
+:root {
+  --goldenhub-black: #070707;
+  --goldenhub-ink: #111111;
+  --goldenhub-charcoal: #171717;
+  --goldenhub-gold: #d4af37;
+  --goldenhub-gold-soft: #f5d77b;
+  --goldenhub-bronze: #9f7928;
+  --goldenhub-cream: #fbf7ea;
+  --goldenhub-muted: #8b8064;
+  --surface-bg:
+    radial-gradient(circle at 12% 0%, rgba(212, 175, 55, 0.18), transparent 28rem),
+    radial-gradient(circle at 90% 12%, rgba(245, 215, 123, 0.16), transparent 24rem),
+    linear-gradient(180deg, #0b0b0b 0%, #12100a 45%, #fbf7ea 45.1%, #f8f4e8 100%);
+  --text-main: #f8f1d6;
+  --panel-bg: rgba(12, 12, 12, 0.78);
+  --panel-border: rgba(212, 175, 55, 0.24);
+}
+
+body {
+  background: var(--surface-bg);
+}
+
+.ush-site {
+  --ush-primary: var(--goldenhub-black) !important;
+  --ush-secondary: var(--goldenhub-gold) !important;
+  --ush-accent: var(--goldenhub-gold-soft) !important;
+  background:
+    radial-gradient(circle at 12% 3%, rgba(212, 175, 55, 0.28), transparent 26rem),
+    radial-gradient(circle at 82% 8%, rgba(245, 215, 123, 0.18), transparent 24rem),
+    linear-gradient(145deg, #050505 0%, #11100c 48%, #f8f3e3 48.1%, #fffaf0 100%) !important;
+}
+
+.ush-header {
+  border-bottom-color: rgba(212, 175, 55, 0.22) !important;
+  background: rgba(7, 7, 7, 0.88) !important;
+}
+
+.ush-brand,
+.ush-nav,
+.ush-brand-copy small {
+  color: #f8f1d6 !important;
+}
+
+.ush-logo-wrap {
+  background: linear-gradient(145deg, #090909, #17120a) !important;
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.32) !important;
+}
+
+.ush-signin,
+.ush-cta-primary,
+.button-primary {
+  background: linear-gradient(135deg, #d4af37, #f7df8a 44%, #9f7928) !important;
+  color: #090909 !important;
+  box-shadow: 0 20px 45px rgba(159, 121, 40, 0.28) !important;
+}
+
+.ush-cta-secondary,
+.button-secondary {
+  border-color: rgba(212, 175, 55, 0.38) !important;
+  background: rgba(255, 250, 240, 0.92) !important;
+  color: #111111 !important;
+}
+
+.ush-badge,
+.ush-kicker,
+.chip,
+.status-badge {
+  border-color: rgba(212, 175, 55, 0.32) !important;
+  background: rgba(212, 175, 55, 0.12) !important;
+  color: #9f7928 !important;
+}
+
+.ush-hero-copy h1,
+.ush-contact h2,
+.ush-footer strong {
+  color: #f8f1d6 !important;
+}
+
+.ush-hero-lede,
+.ush-trust-strip,
+.ush-footer {
+  color: rgba(248, 241, 214, 0.82) !important;
+}
+
+.ush-dashboard-card,
+.glass-panel,
+.theme-surface,
+.theme-surface-soft {
+  border-color: rgba(212, 175, 55, 0.2) !important;
+  background: rgba(13, 13, 13, 0.84) !important;
+  color: #f8f1d6 !important;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.22) !important;
+}
+
+.ush-dashboard-main,
+.ush-proof-grid article,
+.ush-service-grid article,
+.ush-timeline article,
+.ush-compare-grid article,
+.ush-faq details,
+.ush-contact-card {
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  box-shadow: 0 24px 70px rgba(20, 15, 4, 0.12) !important;
+}
+
+.ush-meter span {
+  background: linear-gradient(90deg, #9f7928, #d4af37, #f7df8a) !important;
+}
+
+.app-shell .glass-panel,
+.page-container .glass-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.app-shell .glass-panel::before,
+.page-container .glass-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d4af37, #f7df8a, transparent);
+  opacity: 0.86;
+}
+
+[data-theme="dark"] .glass-panel,
+[data-theme="dark"] .theme-surface,
+[data-theme="dark"] .theme-surface-soft {
+  background: rgba(10, 10, 10, 0.88) !important;
+  border-color: rgba(212, 175, 55, 0.24) !important;
+}
+
+@media (max-width: 720px) {
+  .ush-site {
+    background: linear-gradient(180deg, #050505 0%, #11100c 52%, #fffaf0 52.1%, #fffaf0 100%) !important;
+  }
+}
