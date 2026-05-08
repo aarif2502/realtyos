@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOMAIN="${1:-app.goldenhub.co.uk}"
+DOMAIN="${1:-realtyos.goldenhub.co.uk}"
 EMAIL="${2:-info@goldenhub.co.uk}"
 
 log() {
