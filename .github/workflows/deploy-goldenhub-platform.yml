@@ -1,0 +1,35 @@
+name: Deploy Goldenhub Platform
+
+on:
+  push:
+    branches:
+      - goldenhub-platform
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate deployment secrets
+        run: |
+          test -n "${{ secrets.OCI_DEPLOY_HOST }}"
+          test -n "${{ secrets.OCI_DEPLOY_USER }}"
+          test -n "${{ secrets.OCI_DEPLOY_SSH_KEY }}"
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.OCI_DEPLOY_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H "${{ secrets.OCI_DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Deploy to OCI AlmaLinux VM
+        run: |
+          ssh ${{ secrets.OCI_DEPLOY_USER }}@${{ secrets.OCI_DEPLOY_HOST }} << 'EOF'
+            cd /opt/goldenhub/realtyos
+            chmod +x ops/deploy/deploy-almalinux.sh
+            BRANCH=goldenhub-platform ./ops/deploy/deploy-almalinux.sh
+          EOF
